@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <input type="text" ng-model="name">
+        <br><br>
+        <label>{{name}}</label>
+        <br><br>
+        <input type="number" ng-model="first">
+        <br><br>
+        <input type="number" ng-model="second">
+        <br><br>
+        <label>{{ first + second }}</label>
+        <br><br>
+        <button type="button" ng-click="changeEverything()">Change</button>
+    </div>
+</body>
+
+</html>
